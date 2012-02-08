@@ -24,6 +24,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // first direct to Group View
+    
 }
 
 - (void)viewDidUnload
