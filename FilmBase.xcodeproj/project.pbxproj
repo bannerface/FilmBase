@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040008B114E24F3900007D34 /* dataV.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 040008B014E24F3900007D34 /* dataV.sqlite */; };
+		040008B514E253E700007D34 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008B414E253E700007D34 /* LoginView.m */; };
+		040008B814E253F500007D34 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008B714E253F500007D34 /* MainView.m */; };
+		040008BB14E2540700007D34 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008BA14E2540700007D34 /* GroupView.m */; };
+		040008BE14E2541400007D34 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008BD14E2541400007D34 /* DetailView.m */; };
+		040008C514E270A000007D34 /* FilmBaseViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008C414E270A000007D34 /* FilmBaseViewControllerDelegate.m */; };
+		798C2A3F14E209390073F71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A3E14E209390073F71A /* UIKit.framework */; };
+		798C2A4114E209390073F71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A4014E209390073F71A /* Foundation.framework */; };
+		798C2A4314E209390073F71A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A4214E209390073F71A /* CoreGraphics.framework */; };
+		798C2A4914E209390073F71A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 798C2A4714E209390073F71A /* InfoPlist.strings */; };
+		798C2A4B14E209390073F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 798C2A4A14E209390073F71A /* main.m */; };
+		798C2A4F14E209390073F71A /* FilmBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 798C2A4E14E209390073F71A /* FilmBaseAppDelegate.m */; };
+		798C2A5214E209390073F71A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798C2A5014E209390073F71A /* MainWindow.xib */; };
+		798C2A5514E209390073F71A /* FilmBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798C2A5414E209390073F71A /* FilmBaseViewController.m */; };
+		798C2A5814E209390073F71A /* FilmBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798C2A5614E209390073F71A /* FilmBaseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040008B014E24F3900007D34 /* dataV.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dataV.sqlite; sourceTree = "<group>"; };
+		040008B314E253E700007D34 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		040008B414E253E700007D34 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		040008B614E253F500007D34 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		040008B714E253F500007D34 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		040008B914E2540700007D34 /* GroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupView.h; sourceTree = "<group>"; };
+		040008BA14E2540700007D34 /* GroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupView.m; sourceTree = "<group>"; };
+		040008BC14E2541400007D34 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		040008BD14E2541400007D34 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		040008C314E270A000007D34 /* FilmBaseViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmBaseViewControllerDelegate.h; sourceTree = "<group>"; };
+		040008C414E270A000007D34 /* FilmBaseViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmBaseViewControllerDelegate.m; sourceTree = "<group>"; };
+		798C2A3A14E209390073F71A /* FilmBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		798C2A3E14E209390073F71A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		798C2A4014E209390073F71A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		798C2A4214E209390073F71A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		798C2A4614E209390073F71A /* FilmBase-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilmBase-Info.plist"; sourceTree = "<group>"; };
+		798C2A4814E209390073F71A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		798C2A4A14E209390073F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		798C2A4C14E209390073F71A /* FilmBase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilmBase-Prefix.pch"; sourceTree = "<group>"; };
+		798C2A4D14E209390073F71A /* FilmBaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmBaseAppDelegate.h; sourceTree = "<group>"; };
+		798C2A4E14E209390073F71A /* FilmBaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmBaseAppDelegate.m; sourceTree = "<group>"; };
+		798C2A5114E209390073F71A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		798C2A5314E209390073F71A /* FilmBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmBaseViewController.h; sourceTree = "<group>"; };
+		798C2A5414E209390073F71A /* FilmBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmBaseViewController.m; sourceTree = "<group>"; };
+		798C2A5714E209390073F71A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FilmBaseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		798C2A3714E209380073F71A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C2A3F14E209390073F71A /* UIKit.framework in Frameworks */,
+				798C2A4114E209390073F71A /* Foundation.framework in Frameworks */,
+				798C2A4314E209390073F71A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040008B214E253CC00007D34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040008B314E253E700007D34 /* LoginView.h */,
+				040008B414E253E700007D34 /* LoginView.m */,
+				040008B614E253F500007D34 /* MainView.h */,
+				040008B714E253F500007D34 /* MainView.m */,
+				040008B914E2540700007D34 /* GroupView.h */,
+				040008BA14E2540700007D34 /* GroupView.m */,
+				040008BC14E2541400007D34 /* DetailView.h */,
+				040008BD14E2541400007D34 /* DetailView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		798C2A2F14E209380073F71A = {
+			isa = PBXGroup;
+			children = (
+				040008B014E24F3900007D34 /* dataV.sqlite */,
+				798C2A4414E209390073F71A /* FilmBase */,
+				798C2A3D14E209390073F71A /* Frameworks */,
+				798C2A3B14E209390073F71A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		798C2A3B14E209390073F71A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				798C2A3A14E209390073F71A /* FilmBase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798C2A3D14E209390073F71A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798C2A3E14E209390073F71A /* UIKit.framework */,
+				798C2A4014E209390073F71A /* Foundation.framework */,
+				798C2A4214E209390073F71A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		798C2A4414E209390073F71A /* FilmBase */ = {
+			isa = PBXGroup;
+			children = (
+				040008B214E253CC00007D34 /* View */,
+				798C2A4D14E209390073F71A /* FilmBaseAppDelegate.h */,
+				798C2A4E14E209390073F71A /* FilmBaseAppDelegate.m */,
+				798C2A5014E209390073F71A /* MainWindow.xib */,
+				040008C314E270A000007D34 /* FilmBaseViewControllerDelegate.h */,
+				040008C414E270A000007D34 /* FilmBaseViewControllerDelegate.m */,
+				798C2A5314E209390073F71A /* FilmBaseViewController.h */,
+				798C2A5414E209390073F71A /* FilmBaseViewController.m */,
+				798C2A5614E209390073F71A /* FilmBaseViewController.xib */,
+				798C2A4514E209390073F71A /* Supporting Files */,
+			);
+			path = FilmBase;
+			sourceTree = "<group>";
+		};
+		798C2A4514E209390073F71A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				798C2A4614E209390073F71A /* FilmBase-Info.plist */,
+				798C2A4714E209390073F71A /* InfoPlist.strings */,
+				798C2A4A14E209390073F71A /* main.m */,
+				798C2A4C14E209390073F71A /* FilmBase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		798C2A3914E209380073F71A /* FilmBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798C2A5B14E209390073F71A /* Build configuration list for PBXNativeTarget "FilmBase" */;
+			buildPhases = (
+				798C2A3614E209380073F71A /* Sources */,
+				798C2A3714E209380073F71A /* Frameworks */,
+				798C2A3814E209380073F71A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmBase;
+			productName = FilmBase;
+			productReference = 798C2A3A14E209390073F71A /* FilmBase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798C2A3114E209380073F71A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 798C2A3414E209380073F71A /* Build configuration list for PBXProject "FilmBase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 798C2A2F14E209380073F71A;
+			productRefGroup = 798C2A3B14E209390073F71A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				798C2A3914E209380073F71A /* FilmBase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		798C2A3814E209380073F71A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C2A4914E209390073F71A /* InfoPlist.strings in Resources */,
+				798C2A5214E209390073F71A /* MainWindow.xib in Resources */,
+				798C2A5814E209390073F71A /* FilmBaseViewController.xib in Resources */,
+				040008B114E24F3900007D34 /* dataV.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		798C2A3614E209380073F71A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C2A4B14E209390073F71A /* main.m in Sources */,
+				798C2A4F14E209390073F71A /* FilmBaseAppDelegate.m in Sources */,
+				798C2A5514E209390073F71A /* FilmBaseViewController.m in Sources */,
+				040008B514E253E700007D34 /* LoginView.m in Sources */,
+				040008B814E253F500007D34 /* MainView.m in Sources */,
+				040008BB14E2540700007D34 /* GroupView.m in Sources */,
+				040008BE14E2541400007D34 /* DetailView.m in Sources */,
+				040008C514E270A000007D34 /* FilmBaseViewControllerDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		798C2A4714E209390073F71A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798C2A4814E209390073F71A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		798C2A5014E209390073F71A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798C2A5114E209390073F71A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		798C2A5614E209390073F71A /* FilmBaseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798C2A5714E209390073F71A /* en */,
+			);
+			name = FilmBaseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		798C2A5914E209390073F71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		798C2A5A14E209390073F71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		798C2A5C14E209390073F71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmBase/FilmBase-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "FilmBase/FilmBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		798C2A5D14E209390073F71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmBase/FilmBase-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "FilmBase/FilmBase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798C2A3414E209380073F71A /* Build configuration list for PBXProject "FilmBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C2A5914E209390073F71A /* Debug */,
+				798C2A5A14E209390073F71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798C2A5B14E209390073F71A /* Build configuration list for PBXNativeTarget "FilmBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C2A5C14E209390073F71A /* Debug */,
+				798C2A5D14E209390073F71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 798C2A3114E209380073F71A /* Project object */;
+}
