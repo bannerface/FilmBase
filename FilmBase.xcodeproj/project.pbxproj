@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040008B114E24F3900007D34 /* dataV.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 040008B014E24F3900007D34 /* dataV.sqlite */; };
+		040008B114E24F3900007D34 /* FilmBase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 040008B014E24F3900007D34 /* FilmBase.sqlite */; };
 		040008B514E253E700007D34 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008B414E253E700007D34 /* LoginView.m */; };
 		040008B814E253F500007D34 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008B714E253F500007D34 /* MainView.m */; };
 		040008BB14E2540700007D34 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008BA14E2540700007D34 /* GroupView.m */; };
 		040008BE14E2541400007D34 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008BD14E2541400007D34 /* DetailView.m */; };
 		040008C514E270A000007D34 /* FilmBaseViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040008C414E270A000007D34 /* FilmBaseViewControllerDelegate.m */; };
+		040008CC14E2809E00007D34 /* PlausibleDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040008CB14E2809E00007D34 /* PlausibleDatabase.framework */; };
+		040008CE14E282A700007D34 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 040008CD14E282A700007D34 /* libsqlite3.dylib */; };
 		798C2A3F14E209390073F71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A3E14E209390073F71A /* UIKit.framework */; };
 		798C2A4114E209390073F71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A4014E209390073F71A /* Foundation.framework */; };
 		798C2A4314E209390073F71A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C2A4214E209390073F71A /* CoreGraphics.framework */; };
@@ -25,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040008B014E24F3900007D34 /* dataV.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dataV.sqlite; sourceTree = "<group>"; };
+		040008B014E24F3900007D34 /* FilmBase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FilmBase.sqlite; sourceTree = "<group>"; };
 		040008B314E253E700007D34 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		040008B414E253E700007D34 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		040008B614E253F500007D34 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		040008BD14E2541400007D34 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 		040008C314E270A000007D34 /* FilmBaseViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmBaseViewControllerDelegate.h; sourceTree = "<group>"; };
 		040008C414E270A000007D34 /* FilmBaseViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmBaseViewControllerDelegate.m; sourceTree = "<group>"; };
+		040008CB14E2809E00007D34 /* PlausibleDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlausibleDatabase.framework; sourceTree = "<group>"; };
+		040008CD14E282A700007D34 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		798C2A3A14E209390073F71A /* FilmBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		798C2A3E14E209390073F71A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		798C2A4014E209390073F71A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,9 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040008CE14E282A700007D34 /* libsqlite3.dylib in Frameworks */,
 				798C2A3F14E209390073F71A /* UIKit.framework in Frameworks */,
 				798C2A4114E209390073F71A /* Foundation.framework in Frameworks */,
 				798C2A4314E209390073F71A /* CoreGraphics.framework in Frameworks */,
+				040008CC14E2809E00007D34 /* PlausibleDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +90,7 @@
 		798C2A2F14E209380073F71A = {
 			isa = PBXGroup;
 			children = (
-				040008B014E24F3900007D34 /* dataV.sqlite */,
+				040008B014E24F3900007D34 /* FilmBase.sqlite */,
 				798C2A4414E209390073F71A /* FilmBase */,
 				798C2A3D14E209390073F71A /* Frameworks */,
 				798C2A3B14E209390073F71A /* Products */,
@@ -102,6 +108,8 @@
 		798C2A3D14E209390073F71A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				040008CD14E282A700007D34 /* libsqlite3.dylib */,
+				040008CB14E2809E00007D34 /* PlausibleDatabase.framework */,
 				798C2A3E14E209390073F71A /* UIKit.framework */,
 				798C2A4014E209390073F71A /* Foundation.framework */,
 				798C2A4214E209390073F71A /* CoreGraphics.framework */,
@@ -190,7 +198,7 @@
 				798C2A4914E209390073F71A /* InfoPlist.strings in Resources */,
 				798C2A5214E209390073F71A /* MainWindow.xib in Resources */,
 				798C2A5814E209390073F71A /* FilmBaseViewController.xib in Resources */,
-				040008B114E24F3900007D34 /* dataV.sqlite in Resources */,
+				040008B114E24F3900007D34 /* FilmBase.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +298,10 @@
 		798C2A5C14E209390073F71A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilmBase/FilmBase-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -302,6 +314,10 @@
 		798C2A5D14E209390073F71A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilmBase/FilmBase-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

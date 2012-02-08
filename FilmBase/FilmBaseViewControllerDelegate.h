@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <PlausibleDatabase/PlausibleDatabase.h>
+
 @interface FBGroup : NSObject 
 {   
     NSString *strID;
@@ -37,6 +39,8 @@
 
 @end
 
-@protocol ShowProductViewControllerDelegate
+@protocol FilmBaseViewControllerDelegate
+
+-(id<PLResultSet>) GetData:(NSString *)strSQLCommand;
 
 @end

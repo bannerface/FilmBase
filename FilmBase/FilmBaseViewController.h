@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FilmBaseViewControllerDelegate.h"
 
-@interface FilmBaseViewController : UIViewController
+@interface FilmBaseViewController : UIViewController<FilmBaseViewControllerDelegate>
+{
+    PLSqliteDatabase        * dbPointer;
+    
+}
+
+-(BOOL)SetupDataBase;
+-(void)CloseDataBase;
+
+-(id<PLResultSet>) GetData:(NSString *)strSQLCommand;
 
 @end

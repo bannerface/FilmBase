@@ -39,4 +39,36 @@
     return YES;
 }
 
+-(BOOL)SetupDataBase
+{
+    [self CloseDataBase];
+    
+    NSLog(@"%@",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES));
+	NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *realPath = [documentPath stringByAppendingPathComponent:@"FlimBase.sqlite"];
+        
+    dbPointer = [[PLSqliteDatabase alloc] initWithPath:realPath];
+	[dbPointer open];
+    return YES;
+}
+
+-(void)CloseDataBase
+{
+    if (dbPointer) {
+		[dbPointer close];
+		dbPointer = NULL;
+	}
+}
+
+-(id<PLResultSet>) GetData:(NSString *)strSQLCommand
+{
+    id<PLResultSet> rs = nil;
+    if (dbPointer)
+    {
+        rs = [dbPointer executeQuery:strSQLCommand];
+    }
+    return rs;
+}
+
+
 @end
